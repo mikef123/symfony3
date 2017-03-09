@@ -18,4 +18,14 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'),
         ));
     }
+    
+    
+    /**
+     * @Route("/hello-world", name="helloWord")
+     */
+    public function helloWorldAction()
+    {
+        echo "<h1>Im a fucking Genius!!</h1>";
+        die();
+    }
 }
