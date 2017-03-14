@@ -1,0 +1,27 @@
+FormBundle\Entity\Usuario:
+    type: entity
+    table: usuario
+    repositoryClass: FormBundle\Repository\UsuarioRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: 255
+        apellido:
+            type: string
+            length: 255
+        celular:
+            type: string
+            length: 255
+        correo:
+            type: string
+            length: 255
+        ciudad:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
